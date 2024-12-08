@@ -1,4 +1,4 @@
-# Libft 📚
+📚 # Libft 📚
 
 ## Descripción del proyecto
 
@@ -50,5 +50,13 @@ Implementación de funciones para trabajar con listas enlazadas utilizando la es
 
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/Enriquepardo/Libft.git
+2. Accede al directorio del proyecto:
+   ```bash
    cd libft
+3. Compila la libreria:
+   ```bash
+   make
+4. Incluye la libreria en tu proyecto:
+   #include "libft.h"
+
