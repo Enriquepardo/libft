@@ -58,5 +58,11 @@ Implementación de funciones para trabajar con listas enlazadas utilizando la es
    ```bash
    make
 4. Incluye la libreria en tu proyecto:
+   ```c
    #include "libft.h"
+   ```
+   ```bash
+   gcc main.c -L. -lft -o my_program
+   ```
+   
 
