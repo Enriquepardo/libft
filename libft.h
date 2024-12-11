@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 14:21:24 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/09 14:59:10 by enpardo-         ###   ########.fr       */
+/*   Updated: 2024/12/11 15:25:08 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@
 
 //now all the fucking functions:
 
-
-
+int	ft_isalnum(int c);
+int	ft_isalpha(int c);
+int	ft_isascii(int c);
+int	ft_isdigit(int c);
+int	ft_isprint(int c);
+int	ft_strlen(const char *str);
+void *ft_memset(void *b, int i, size_t len);
 
 
 typedef struct s_list {
