@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/09 14:21:39 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 20:34:06 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/12 21:15:18 by enpardo-          #+#    #+#             */
+/*   Updated: 2024/12/12 21:15:43 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlcpy(char *dest, const char *src,size_t dstsize)
 {
-	size_t	i;
 	
-	i = 0;
-	while(str[i] != '\0')
-		i++;
-	return (i);	
 }

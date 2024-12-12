@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/09 14:21:39 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 20:34:06 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/12 21:16:04 by enpardo-          #+#    #+#             */
+/*   Updated: 2024/12/12 21:18:24 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
 	
-	i = 0;
-	while(str[i] != '\0')
-		i++;
-	return (i);	
 }
