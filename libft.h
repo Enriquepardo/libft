@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 14:21:24 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/11 15:25:08 by enpardo-         ###   ########.fr       */
+/*   Updated: 2024/12/11 15:32:32 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	ft_isdigit(int c);
 int	ft_isprint(int c);
 int	ft_strlen(const char *str);
 void *ft_memset(void *b, int i, size_t len);
+void	ft_bzero(void *str, size_t n);
 
 
 typedef struct s_list {
