@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 14:21:24 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 21:18:53 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/01/18 19:09:44 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,5 @@ int	ft_toupper(int c);														//WIP
 int	ft_tolower(int c);														//WIP
 int	ft_strncmp(const char *s1, const char *s2, size_t n);					//WIP
 int	ft_atoi(const char *str);												//WIP
-
 
 # endif

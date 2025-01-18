@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 15:31:29 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 19:47:53 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/10 13:43:16 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/18 18:11:11 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *str, size_t n)
+int	ft_isalpha(int c)
 {
-	unsigned char *copy;
-
-	copy = str;
-	while (n > 0)
-	{
-		*copy = 0;
-		copy++;
-		n--;
-	}
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	else
+		return (0);
 }

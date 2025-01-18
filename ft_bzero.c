@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 21:03:58 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 21:04:29 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/11 15:31:29 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/18 19:10:07 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	ft_bzero(void *str, size_t n)
 {
-	
+	unsigned char	*copy;
+
+	copy = str;
+	while (n > 0)
+	{
+		*copy = 0;
+		copy++;
+		n--;
+	}
 }

@@ -6,13 +6,13 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 21:16:02 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 21:17:54 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/01/18 18:29:38 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *str, int c, size_t n)
-{
+// void	*ft_memchr(const void *str, int c, size_t n)
+// {
 	
-}
+// }

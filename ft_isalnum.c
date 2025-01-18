@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 21:16:04 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 21:18:24 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/10 14:14:52 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/18 18:11:13 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+int	ft_isalnum(int c)
 {
-	
+	if (c >= '0' && c <= '9')
+		return (1);
+	else if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	else
+		return (0);
 }

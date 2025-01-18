@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 21:04:33 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 21:04:58 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/12 21:16:04 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/18 18:30:04 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
-{
+// char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+// {
 	
-}
+// }

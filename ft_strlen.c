@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 15:23:11 by enpardo-          #+#    #+#             */
-/*   Updated: 2024/12/12 12:30:21 by enpardo-         ###   ########.fr       */
+/*   Created: 2024/12/09 14:21:39 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/18 19:14:11 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *str, int c, size_t len)
+size_t	ft_strlen(const char *str)
 {
-	unsigned char	*copy;
-	
-	copy = str;
-	while (c > 0)
-	{
-		*copy = (unsigned char)c;
-		copy++;
-		len--;
-	}
-	return (str);
+	size_t	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
