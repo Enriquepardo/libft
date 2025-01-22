@@ -33,5 +33,6 @@ char	*ft_strrchr(const char *str, int c)
 /*
 lastch almacenará la dirección del carácter encontrado,
 si hay más de una ocurrencia del carácter en la cadena,
-lastch se actualizará en cada coincidencia, guardando siempre la última dirección.
+lastch se actualizará en cada coincidencia,
+guardando siempre la última dirección.
 */
