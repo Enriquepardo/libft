@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 21:16:04 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/01/22 20:45:25 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/01/23 17:47:29 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		j = 0;
 		if (haystack[i] == needle[j])
 		{
-			s = (char *)(haystack) + i;
+			s = (char *)haystack + i;
 			while (needle[j] && haystack[i + j]
 				&& (haystack[i + j] == needle[j]) && ((i + j) < len))
 				j++;

@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 21:03:58 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/01/23 19:09:10 by enpardo-         ###   ########.fr       */
+/*   Created: 2025/01/23 19:13:17 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/23 19:24:42 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned int	result;
-	int				sign;
+	void	*pt;
 
-	result = 0;
-	sign = 1;
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
-		str++;
-	if (*str == '-')
+	if (nmemb == 0 || size == 0)
 	{
-		sign = -sign;
-		str++;
+		nmemb = 1;
+		size = 1;
 	}
-	else if (*str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
-	{
-		result = result * 10 + (*str - '0');
-		str++;
-	}
-	return (sign * result);
+	pt = malloc(nmemb * size);
+	if (!pt)
+		return (NULL);
+	return (ft_memset(pt, 0, nmemb * size));
 }
