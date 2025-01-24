@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/23 20:45:25 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/01/24 19:00:30 by enpardo-         ###   ########.fr       */
+/*   Created: 2025/01/24 19:46:56 by enpardo-          #+#    #+#             */
+/*   Updated: 2025/01/24 20:27:54 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t			sublen;
-	size_t			lenmax;
-	char			*substr;
+	size_t	start;
+	size_t	end;
+	char	*trimmed;
 
-	if (!s)
+	start = 0;
+	end = ft_strlen(s1);
+	if (!s1 || !set)
 		return (NULL);
-	sublen = ft_strlen(s);
-	if (start >= sublen)
-		return (ft_strdup(""));
-	lenmax = sublen - start;
-	if (len > lenmax)
-		len = lenmax;
-	substr = (char *)malloc(len + 1);
-	if (!substr)
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	while (end > start && ft_strchr(set, s1[end - 1]))
+		end--;
+	trimmed = (char *)malloc(end - start + 1);
+	if (!trimmed)
 		return (NULL);
-	ft_memcpy(substr, s + start, len);
-	substr[len] = '\0';
-	return (substr);
+	ft_memcpy(trimmed, s1 + start, end - start);
+	trimmed[end - start] = '\0';
+	return (trimmed);
 }
