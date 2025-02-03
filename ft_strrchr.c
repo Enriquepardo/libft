@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 20:11:22 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/01/20 18:18:37 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/03 21:29:10 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)str);
 	return (lastch);
 }
-
-/*
-lastch almacenará la dirección del carácter encontrado,
-si hay más de una ocurrencia del carácter en la cadena,
-lastch se actualizará en cada coincidencia,
-guardando siempre la última dirección.
-*/

@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 14:21:24 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/01/24 18:52:13 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/03 21:27:35 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-
-// now all the fucking functions:
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
