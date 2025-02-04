@@ -46,10 +46,6 @@ $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 	@echo "Library $(NAME) created."
 
-$(OBJS_DIR)%.o: %.c
-	@mkdir -p $(dir $@)
-	@$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
 	@rm -rf $(OBJS) $(OBJSB)
 	@echo "Object files cleaned."
