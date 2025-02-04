@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 20:32:46 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/02/03 21:27:26 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/04 17:06:26 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,19 +81,4 @@ char	**ft_split(char const *s, char c)
 	}
 	result[j] = NULL;
 	return (result);
-}
-
-int	main(void)
-{
-	char	**result;
-	int		i;
-
-	result = ft_split("  hello world 42  ", ' ');
-	i = 0;
-	while (result[i])
-	{
-		printf("Word %d: %s\n", i, result[i]);
-		i++;
-	}
-	return (0);
 }

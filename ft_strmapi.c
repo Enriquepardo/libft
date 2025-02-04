@@ -6,13 +6,13 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 13:09:48 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/02/03 21:05:44 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/04 17:18:13 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char	*str;
 	size_t	i;
