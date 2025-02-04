@@ -6,13 +6,13 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 20:57:55 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/02/03 21:29:57 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:28:31 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*destcopy;
 	const unsigned char	*srccopy;

@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 14:21:24 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/02/03 21:27:35 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:29:09 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 void	*ft_memset(void *b, int i, size_t len);
 void	ft_bzero(void *str, size_t n);
-int		*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 char	*ft_strchr(const char *srt, int c);
 char	*ft_strrchr(const char *str, int c);
