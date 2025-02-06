@@ -1,10 +1,10 @@
  # 📚 Libft 📚
 
-## Project Description
+## 📌 Project Description
 
 This project consists of programming a library in C. Your library will include a set of general-purpose functions that your programs will rely on.
 
-## Project Objectives
+## 📋 Project Objectives
 
 - Understand how `libc` standard functions work and how to implement them from scratch.
 - Improve C programming skills while adhering to strict coding standards.
@@ -46,7 +46,7 @@ Implementation of functions to work with linked lists using the `t_list` structu
   - `make re`: Cleans and recompiles everything.
   - `make bonus`: Compiles the bonus functions if implemented.
 
-## Usage
+## 🚀 Usage
 
 1. Clone the repository:
    ```bash
