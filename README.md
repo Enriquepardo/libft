@@ -57,12 +57,11 @@ Implementación de funciones para trabajar con listas enlazadas utilizando la es
 3. Compila la libreria:
    ```bash
    make
-4. Incluye la libreria en tu proyecto:
-   ```c
-   #include "libft.h"
    ```
    ```bash
-   gcc main.c -L. -lft -o my_program
+   cc -Wall -Werror -Wextra main.c (file).c -o my_program
    ```
-   
+   ```
+   ./my_program
+   ```
 
