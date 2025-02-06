@@ -1,60 +1,61 @@
  # 📚 Libft 📚
 
-## Descripción del proyecto
+## Project Description
 
-Este proyecto consiste en programar una librería en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
+This project consists of programming a library in C. Your library will include a set of general-purpose functions that your programs will rely on.
 
-## Objetivos del proyecto
+## Project Objectives
 
-- Comprender cómo funcionan las funciones estándar de `libc` y cómo implementarlas desde cero.
-- Mejorar las habilidades de programación en C respetando estrictos estándares de codificación.
-- Aprender a gestionar la memoria dinámicamente y evitar fugas de memoria.
-- Familiarizarse con herramientas básicas como `Makefile` y el uso de archivos de cabecera.
+- Understand how `libc` standard functions work and how to implement them from scratch.
+- Improve C programming skills while adhering to strict coding standards.
+- Learn how to manage dynamic memory and prevent memory leaks.
+- Get familiar with basic tools such as `Makefile` and the use of header files.
 
-## Contenidos del proyecto
+## Project Contents
 
-### Parte Obligatoria
+### Mandatory Part
 
-1. **Funciones de libc:** 
-   Implementación de funciones como `strlen`, `strcpy`, `memset`, `atoi`, entre otras, siguiendo los prototipos originales pero con un prefijo `ft_`.
-   
-2. **Funciones adicionales:**
+1. **Libc Functions:**  
+   Implementation of functions such as `strlen`, `strcpy`, `memset`, `atoi`, among others, following the original prototypes but with an `ft_` prefix.
+
+2. **Additional Functions:**
    - `ft_substr`
    - `ft_strjoin`
    - `ft_strtrim`
    - `ft_split`
    - `ft_itoa`
-   - Otras funciones útiles para manipular cadenas y números.
+   - Other useful functions for string and number manipulation.
 
-### Parte Bonus
+### Bonus Part
 
-Implementación de funciones para trabajar con listas enlazadas utilizando la estructura `t_list`.
+Implementation of functions to work with linked lists using the `t_list` structure.
 
-- Crear nodos (`ft_lstnew`).
-- Añadir nodos al inicio o al final (`ft_lstadd_front`, `ft_lstadd_back`).
-- Eliminar nodos y listas completas (`ft_lstdelone`, `ft_lstclear`).
-- Iterar y transformar listas (`ft_lstiter`, `ft_lstmap`).
+- Create nodes (`ft_lstnew`).
+- Add nodes at the beginning or end (`ft_lstadd_front`, `ft_lstadd_back`).
+- Delete nodes and entire lists (`ft_lstdelone`, `ft_lstclear`).
+- Iterate and transform lists (`ft_lstiter`, `ft_lstmap`).
 
-### Archivos entregados
+### Submitted Files
 
-- **`libft.h`:** Archivo de cabecera que contiene los prototipos de todas las funciones y las definiciones necesarias.
-- **Archivos `.c`:** Implementación de cada función.
-- **`Makefile`:** Automático para compilar la librería con las siguientes reglas:
-  - `make all`: Compila la librería.
-  - `make clean`: Elimina archivos objeto.
-  - `make fclean`: Elimina archivos objeto y la librería.
-  - `make re`: Limpia y recompila todo.
-  - `make bonus`: Compila las funciones bonus si están implementadas.
+- **`libft.h`:** Header file containing the prototypes of all functions and necessary definitions.
+- **`.c` files:** Implementation of each function.
+- **`Makefile`:** Automates the compilation of the library with the following rules:
+  - `make all`: Compiles the library.
+  - `make clean`: Removes object files.
+  - `make fclean`: Removes object files and the library.
+  - `make re`: Cleans and recompiles everything.
+  - `make bonus`: Compiles the bonus functions if implemented.
 
-## Uso
+## Usage
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/Enriquepardo/Libft.git
-2. Accede al directorio del proyecto:
+
+2. Navigate to the project directory:
    ```bash
    cd libft
-3. Compila la libreria:
+3. Compile the library:
    ```bash
    make
    ```
