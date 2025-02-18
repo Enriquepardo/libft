@@ -6,7 +6,7 @@
 /*   By: enpardo- <enpardo-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 19:01:34 by enpardo-          #+#    #+#             */
-/*   Updated: 2025/02/03 21:29:31 by enpardo-         ###   ########.fr       */
+/*   Updated: 2025/02/18 19:50:33 by enpardo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,24 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	len1;
-	size_t	len2;
-	char	*join;
+	char	*joined;
+	size_t	i;
+	size_t	j;
 
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
+	i = 0;
+	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	join = (char *)malloc(len1 + len2 + 1);
-	if (!join)
+	joined = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!joined)
 		return (NULL);
-	ft_memcpy(join, s1, len1);
-	ft_memcpy(join + len1, s2, len2);
-	join[len1 + len2] = '\0';
-	return (join);
+	while (s1[i])
+	{
+		joined[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+		joined[i++] = s2[j++];
+	joined[i] = '\0';
+	return (joined);
 }
