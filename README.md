@@ -1,6 +1,6 @@
  # 📚 Libft 📚
 
-## 📌 Project Description
+## 📌 Description
 
 This project consists of programming a library in C. Your library will include a set of general-purpose functions that your programs will rely on.
 
